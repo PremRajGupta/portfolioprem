@@ -1,0 +1,133 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+.navbar-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: #111827;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    align-items: center;
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  .menu-icons {
+    display: block;
+  }
+
+  .navbar-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* hero section */
+  header.hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 0;
+  }
+
+  .service-cards,
+  .portfolio-grid,
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .portfolio-item,
+  .about-card {
+    width: 90%;
+  }
+
+  .hero-image {
+    margin-bottom: 30px;
+  }
+
+  .skills-list,
+  .tools-list {
+    flex-direction: column;
+  }
+
+  /* about */
+  .about-section .content-column .text {
+    text-align: justify;
+  }
+  .about-section .content-column .inner-column {
+    padding-right: 10px;
+  }
+
+  /* Certification Section */
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .swiper-slide {
+    padding: 20px 15px;
+  }
+
+  .certificate-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .certificate-card p {
+    font-size: 0.95rem;
+  }
+  .education-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+  /* footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    padding: 0;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Education section */
+  .education-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
