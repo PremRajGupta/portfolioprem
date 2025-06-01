@@ -29,13 +29,26 @@
   }
 
   /* hero section */
-  header.hero {
+ header.hero {
     flex-direction: column;
     text-align: center;
+    padding: 60px 20px;
   }
 
-  .hero-content {
-    padding: 0;
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    margin: 0 auto 30px;
   }
 
   .service-cards,
@@ -49,10 +62,6 @@
   .portfolio-item,
   .about-card {
     width: 90%;
-  }
-
-  .hero-image {
-    margin-bottom: 30px;
   }
 
   .skills-list,
@@ -110,6 +119,20 @@
 
 @media (max-width: 480px) {
 
+  /* hero section */
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+  
   /* Education section */
   .education-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
