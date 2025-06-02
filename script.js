@@ -39,7 +39,7 @@ function updateRole() {
   roleElement.textContent = roles[currentRole];
 }
 
-setInterval(updateRole, 3000); // Change role every 3 seconds
+setInterval(updateRole, 2000); // Change role every 3 seconds
 
 
   // smooth

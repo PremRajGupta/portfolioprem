@@ -11,6 +11,21 @@ body {
   color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* all heading */
+.section-title {
+  font-size: 2.5rem;
+  /* margin-bottom: 0.5rem; */
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000000;
+  font-weight: bold;
+  /* font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
 
 /* Navbar Container */
 .navbar {
@@ -204,81 +219,14 @@ body {
 
 
 
-/* Extra section */
-/* .contact-section {
-  padding: 80px 10%;
-  background-color: #fff;
-  text-align: center;
-} */
-
-
-/* Hire me section */
-.hire-me {
-  background: #f8f9fa;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hire-me .container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hire-me h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.hire-me p {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.btnn {
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.primary-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-}
-
-.primary-btn:hover {
-  background-color: #0056b3;
-}
-
-.secondary-btn {
-  background-color: transparent;
-  color: #007bff;
-  border: 2px solid #007bff;
-}
-
-.secondary-btn:hover {
-  background-color: #007bff;
-  color: white;
-}
 
 
 /* about section */
 
 .about-section {
   position: relative;
-  padding: 50px 0px;
-  /* border: 2px solid red; */
+  padding: 50px 6%;
+
 }
 
 .about-section .content-column {
@@ -298,6 +246,7 @@ body {
   font-size: 15px;
   line-height: 2em;
   margin-bottom: 40px;
+  /* border: 2px solid red; */
 }
 
 .about-section .content-column .email {
@@ -307,7 +256,7 @@ body {
   margin-bottom: 50px;
 }
 
-.about-section .btn-style-three:before {
+ .about-section .btn-style-three:before {
   position: absolute;
   content: "";
   left: 10px;
@@ -316,7 +265,7 @@ body {
   right: -10px;
   bottom: -10px;
   background: url(https://i.ibb.co/DKn55Qz/pattern-1.jpg) repeat;
-}
+} 
 .about-section .btn-style-three:hover {
   color: #ffffff;
   background: #d7a449;
@@ -361,21 +310,19 @@ body {
 }
 
 /* Skill Section */
+
+
 .skills-section {
   padding: 60px 20px;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
 }
 
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #333;
-}
 
-.container {
-  max-width: 1100px;
+
+.skills-container {
+  max-width: 1340px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .skills-group {
@@ -442,15 +389,11 @@ body {
 }
 
 /* project section */
-/* Base styles */
-body {
-  /* font-family: 'Segoe UI', sans-serif; */
-  /* margin: 0; */
-  background-color: #f9fafb;
-  /* color: #1f2937; */
-}
 
-.containerr {
+/* Base styles */
+
+
+.project-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -459,6 +402,7 @@ body {
 /* Section */
 .project-section {
   padding: 80px 0;
+
 }
 
 .section-heading {
@@ -505,6 +449,18 @@ body {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Card */
@@ -589,28 +545,27 @@ body {
   background-color: #e5e7eb;
 }
 
+
+
+
 /* Education Section */
 .education-section {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
 }
 
 .other-section {
   padding: 5px 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
 }
 
-.section-title {
-  /* text-align: center;
-  font-size: 2.5vw;
-  font-weight: 700;
-  padding: 20px;
-  font-family: "Poppins", sans-serif;
-  color: #0a1f44; */
-
-  text-align: center;
+.education-section-title {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .education-grid {
@@ -619,7 +574,8 @@ body {
   gap: 30px;
   /* max-width: 1000px; */
   /* margin: 0 auto; */
-  padding-left: 30px;
+  padding-left: 60px;
+  padding-right: 50px;
   margin-bottom: 0;
 }
 
@@ -663,12 +619,14 @@ body {
   background: #f0f4f8;
 }
 
-.section-title {
-  text-align: center;
+/* .section-title {
   font-size: 2.5rem;
+  text-align: center;
   margin-bottom: 40px;
   color: #333;
-}
+  font-weight: bold;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
 
 .certificate-swiper {
   padding: 30px 0;
