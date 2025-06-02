@@ -1,68 +1,82 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
-  
-.navbar-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    background: #111827;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
-    align-items: center;
-    display: none;
-  }
-
-  .navbar-links.active {
-    display: flex;
-    animation: slideDown 0.3s ease-in-out;
-  }
-
+  /* Navbar Section */
   .menu-icons {
     display: block;
   }
 
-  .navbar-links li {
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(3, 1, 66, 0.957);
+    flex-direction: column;
     width: 100%;
     text-align: center;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navbar-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar-links li {
+    padding: 1rem 0;
   }
 
   /* hero section */
- header.hero {
+  header.hero {
     flex-direction: column;
     text-align: center;
     padding: 60px 20px;
   }
+  .hero-content {
+    max-height: 270px;
+    padding-left: 0;
+  }
+  /* .hero {
+    flex-direction: column;
+    padding: 40px 5%;
+    text-align: center;
+  } */
 
-  .hero-content h1 {
+  /* .buttons a {
+    margin-bottom: 10px;
+    display: inline-block;
+  } */
+
+  /* .hero-content h1 {
     font-size: 2rem;
-  }
+  } */
 
-  .hero-content p {
+  /* .hero-content p {
     font-size: 1rem;
-  }
+  } */
 
-  .buttons {
+  /* .buttons {
     justify-content: center;
-  }
+  } */
 
-  .hero-image {
+  /* .hero-image {
     margin: 0 auto 30px;
-  }
+  } */
 
-  .service-cards,
+  /* .service-cards,
   .portfolio-grid,
   .about-cards {
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
-  .card,
+  /* .card,
   .portfolio-item,
   .about-card {
     width: 90%;
-  }
+  } */
 
   .skills-list,
   .tools-list {
@@ -118,7 +132,6 @@
 }
 
 @media (max-width: 480px) {
-
   /* hero section */
   .hero-content h1 {
     font-size: 1.8rem;
@@ -132,7 +145,7 @@
     padding: 10px 24px;
     font-size: 0.95rem;
   }
-  
+
   /* Education section */
   .education-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

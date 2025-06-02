@@ -23,41 +23,44 @@
 <body>
   <!-- Navbar section -->
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
-    <div class="navbar-container">
-      <a href="index.html" class="navbar-logo">Prem Raj</a>
+  <div class="navbar-container">
+    <a href="index.html" class="navbar-logo">Prem Raj</a>
 
-      <!-- Toggle icons -->
-      <div class="menu-icons">
-        <i class="ri-menu-line" id="menu-open" aria-label="Open menu"></i>
-        <i class="ri-close-line" id="menu-close" aria-label="Close menu"></i>
-      </div>
-
-      <!-- Nav links -->
-      <ul class="navbar-links" id="navbar-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certificates">Certificate</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- Toggle icons -->
+    <div class="menu-icons">
+      <i class="ri-menu-line" id="menu-open" aria-label="Open menu"></i>
+      <i class="ri-close-line" id="menu-close" aria-label="Close menu"></i>
     </div>
-  </nav>
+
+    <!-- Nav links -->
+    <ul class="navbar-links" id="navbar-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certificates">Certificate</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
 
   <!-- Hero Section -->
   <header class="hero" id="home">
     <div class="hero-image">
-      <img src="https://i.postimg.cc/xTS8FvMM/IMG-20250107-165421891.jpg" alt="Hero Image" />
+      <img src="./pic.png" alt="Hero Image" />
     </div>
     <div class="hero-content">
-      <h1>Hi, I’m <span>Prem Raj</span></h1>
-      <p>I’m a Python Developer and Penetration Tester.</p>
-      <div class="buttons">
-        <a href="./hireme.html" class="btn" target="_blank">Hire Me</a>
+      <h1 class="fade-in">Hi, I’m <span>Prem Raj</span></h1>
+      <p id="dynamic-role" class="fade-in-delay">Python Developer</p>
+      <div class="buttons fade-in-delay2">
         <a href="#resume" class="btn outline">CV/Resume</a>
+        <a href="#contact" class="btn outline">Contact</a>
       </div>
     </div>
   </header>
+
+  
 
   <marquee behavior="alert" direction="" style="color: red">Work on this portfolio is in progress and it will be
     finalised by June
@@ -533,7 +536,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-brand">
-        <h2>PremRaj</h2>
+        <h2>Prem Raj</h2>
         <p>I am Developer & Penetration Tester(Red Team).</p>
       </div>
 

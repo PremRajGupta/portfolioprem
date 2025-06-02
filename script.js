@@ -1,29 +1,46 @@
-// Menu bar
 
-  const menuOpen = document.getElementById("menu-open");
-  const menuClose = document.getElementById("menu-close");
-  const navbarLinks = document.getElementById("navbar-links");
+// navbar section
+const menuOpen = document.getElementById("menu-open");
+const menuClose = document.getElementById("menu-close");
+const navbarLinks = document.getElementById("navbar-links");
+const navItems = document.querySelectorAll(".navbar-links a");
 
-  menuOpen.addEventListener("click", () => {
-    navbarLinks.classList.add("active");
-    menuOpen.style.display = "none";
-    menuClose.style.display = "block";
-  });
+menuOpen.addEventListener("click", () => {
+  navbarLinks.classList.add("active");
+  menuOpen.style.display = "none";
+  menuClose.style.display = "inline";
+});
 
-  menuClose.addEventListener("click", () => {
+menuClose.addEventListener("click", () => {
+  navbarLinks.classList.remove("active");
+  menuOpen.style.display = "inline";
+  menuClose.style.display = "none";
+});
+
+// Hide nav on link click (for mobile UX)
+navItems.forEach(link => {
+  link.addEventListener("click", () => {
     navbarLinks.classList.remove("active");
-    menuOpen.style.display = "block";
+    menuOpen.style.display = "inline";
     menuClose.style.display = "none";
   });
+});
 
-  // Optional: close menu when any link is clicked
-  document.querySelectorAll(".navbar-links a").forEach(link => {
-    link.addEventListener("click", () => {
-      navbarLinks.classList.remove("active");
-      menuOpen.style.display = "block";
-      menuClose.style.display = "none";
-    });
-  });
+
+
+
+  // hero section
+  const roles = ["Python Developer", "Penetration Tester"];
+let currentRole = 0;
+const roleElement = document.getElementById("dynamic-role");
+
+function updateRole() {
+  currentRole = (currentRole + 1) % roles.length;
+  roleElement.textContent = roles[currentRole];
+}
+
+setInterval(updateRole, 3000); // Change role every 3 seconds
+
 
   // smooth
   
