@@ -1,4 +1,3 @@
-
 // navbar section
 const menuOpen = document.getElementById("menu-open");
 const menuClose = document.getElementById("menu-close");
@@ -18,7 +17,7 @@ menuClose.addEventListener("click", () => {
 });
 
 // Hide nav on link click (for mobile UX)
-navItems.forEach(link => {
+navItems.forEach((link) => {
   link.addEventListener("click", () => {
     navbarLinks.classList.remove("active");
     menuOpen.style.display = "inline";
@@ -26,11 +25,8 @@ navItems.forEach(link => {
   });
 });
 
-
-
-
-  // hero section
-  const roles = ["Python Developer", "Penetration Tester"];
+// hero section
+const roles = ["Python Developer", "Penetration Tester"];
 let currentRole = 0;
 const roleElement = document.getElementById("dynamic-role");
 
@@ -41,25 +37,21 @@ function updateRole() {
 
 setInterval(updateRole, 2000); // Change role every 3 seconds
 
+// smooth
 
-  // smooth
-  
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      const offset = 70; // height of fixed navbar
-      const topPosition = target.offsetTop - offset;
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    const offset = 70; // height of fixed navbar
+    const topPosition = target.offsetTop - offset;
 
-      window.scrollTo({
-        top: topPosition,
-        behavior: 'smooth'
-      });
+    window.scrollTo({
+      top: topPosition,
+      behavior: "smooth",
     });
   });
-
-
-
+});
 
 // Skill Section
 function toggleDetail(element) {
@@ -77,25 +69,63 @@ function toggleDetail(element) {
 
 // Project section
 
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card");
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Remove active class from all
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Remove active class from all
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
 
-      const filterValue = button.getAttribute('data-filter');
+    const filterValue = button.getAttribute("data-filter");
 
-      projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
+    projectCards.forEach((card) => {
+      const category = card.getAttribute("data-category");
 
-        if (filterValue === 'all' || category.includes(filterValue)) {
-          card.classList.remove('hide');
-        } else {
-          card.classList.add('hide');
-        }
-      });
+      if (filterValue === "all" || category.includes(filterValue)) {
+        card.classList.remove("hide");
+      } else {
+        card.classList.add("hide");
+      }
     });
+  });
+});
+
+// contact section
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const status = document.getElementById("formStatus");
+    status.textContent = "Sending...";
+
+    const formData = {
+      name: this.name.value.trim(),
+      email: this.email.value.trim(),
+      message: this.message.value.trim(),
+    };
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbzNfqU8NroZ_hKpnH-4CHDtZhqttXJ_czlqREV6ZyIr8-7YDqnDDurmLcUIQ7RukzlL/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers: { "Content-Type": "application/json" },
+        }
+      );
+
+      if (response.ok) {
+        status.textContent = "Message sent successfully!";
+        status.style.color = "green";
+        this.reset();
+      } else {
+        throw new Error("Network error");
+      }
+    } catch (err) {
+      status.textContent = "Failed to send message. Please try again.";
+      status.style.color = "red";
+    }
   });

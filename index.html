@@ -23,26 +23,26 @@
 <body>
   <!-- Navbar section -->
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
-  <div class="navbar-container">
-    <a href="index.html" class="navbar-logo">Prem Raj</a>
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">Prem Raj</a>
 
-    <!-- Toggle icons -->
-    <div class="menu-icons">
-      <i class="ri-menu-line" id="menu-open" aria-label="Open menu"></i>
-      <i class="ri-close-line" id="menu-close" aria-label="Close menu"></i>
+      <!-- Toggle icons -->
+      <div class="menu-icons">
+        <i class="ri-menu-line" id="menu-open" aria-label="Open menu"></i>
+        <i class="ri-close-line" id="menu-close" aria-label="Close menu"></i>
+      </div>
+
+      <!-- Nav links -->
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-
-    <!-- Nav links -->
-    <ul class="navbar-links" id="navbar-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certificates">Certificate</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  </nav>
 
 
   <!-- Hero Section -->
@@ -60,55 +60,47 @@
     </div>
   </header>
 
-  
 
-  <marquee behavior="alert" direction="" style="color: red">Work on this portfolio is in progress and it will be
-    finalised by June
-    15.</marquee>
+
 
   <!-- About Section -->
+  <!DOCTYPE html>
+  <html lang="en">
 
-  <section class="about-section" id="about">
-    <div class="about-container">
-      <div class="row clearfix">
-        <!--Content Column-->
-        <div class="content-column">
-          <div class="inner-column">
-            <div class="sec-title">
-              <div class="title">About Us</div>
-              <h2>
-                We Are The Leader In <br />
-                The Interiores
-              </h2>
-            </div>
-            <div class="text">
-              <p>
-                Hi, I'm <strong>Prem Raj</strong> from <strong>Bihar</strong>,
-                currently a
-                <strong>first-year Computer Applications student at NIET
-                  College</strong>
-                from <strong>Greater Noida</strong>. I'm passionate about
-                <strong>web development</strong> and aspire to become a
-                <strong>Python Developer</strong>.
-              </p>
-              <p>
-                Alongside my degree, I've completed additional courses in
-                <strong>Cyber Security</strong> and
-                <strong>Web Development</strong> from <strong>Delhi</strong>,
-                which have strengthened my technical foundation and
-                problem-solving skills.
-              </p>
-            </div>
-            <div class="email">
-              Request Quote:
-              <span class="theme_color">guptapremraj3@gmail.com</span>
-            </div>
-            <a href="about.html" class="theme-btn btn-style-three">Read More</a>
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Prem Raj</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+
+  <body>
+
+    <section class="about-section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>Hello, my name is <strong>Prem Raj</strong>, and I am originally from Bihar, but I currently reside in
+          <strong>New Delhi</strong>.
+        </p>
+        <p>I am pursuing a <strong>Master's in Computer Applications (MCA)</strong> at <strong>NIET College, Greater
+            Noida</strong>.</p>
+        <p>I have a keen interest in <strong>Software Engineering</strong> and <strong>Penetration Testing</strong>.</p>
+        <p>Additionally, I have completed a <strong>Diploma in Cyber Security</strong> and <strong>Web
+            Development</strong> from Delhi.
+        </p>
       </div>
-    </div>
-  </section>
+
+      <div class="contact-info">
+        <a href="mailto:guptapremraj3@gmail.com">📧 guptapremraj3@gmail.com</a>
+        <a href="tel:+919229186355">📞 +91 92291 86355</a>
+      </div>
+    </section>
+
+  </body>
+
+  </html>
+
+
 
   <!-- Skill Section -->
 
@@ -547,6 +539,34 @@
       </div>
     </div>
   </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name <span>*</span></label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message <span>*</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <p id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+
 
   <!-- Footer Section -->
   <footer class="footer">

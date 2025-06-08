@@ -1,25 +1,16 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  
   /* About Section */
   .about-section .content-column .inner-column {
     padding-right: 50px;
     padding-top: 30px;
   }
 
-  /* .sec-title h2 {
-    font-size: 1.8rem;
-    line-height: 1.4;
-  } */
-
   .about-section .btn-style-three {
     padding: 10px 30px;
     font-size: 14px;
   }
-
-  
 }
-
 
 @media (max-width: 768px) {
   /* Navbar Section */
@@ -60,46 +51,30 @@
     max-height: 270px;
     padding-left: 0;
   }
- 
 
   /* about */
   .about-section {
-    padding: 40px 30px;
+    padding: 40px 15px;
+    margin: 30px 10px;
     text-align: justify;
   }
 
-  .about-section .content-column .inner-column {
-    padding-right: 0;
-    padding-top: 20px;
+  .about-section h2 {
+    font-size: 28px;
   }
 
-  .sec-title .title {
+  .about-content {
     font-size: 16px;
-    padding-right: 30px;
+  }
+
+  .contact-info a {
     display: block;
-  }
-
-  /* .sec-title h2 {
-    font-size: 1.5rem;
-  } */
-
-  .about-section .content-column .text {
-    font-size: 14px;
-    line-height: 1.8em;
-  }
-
-  .about-section .btn-style-three {
-    width: 100%;
-    text-align: center;
-  }
-
-  .about-section .content-column .email {
-    font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
+    margin-right: 0;
   }
 
   /* skill section */
-  .section-title .head{
+  .section-title .head {
     font-size: 5rem;
     margin-bottom: 30px;
   }
@@ -127,7 +102,6 @@
     font-size: 0.88rem;
     padding: 8px;
   }
-
 
   /* Certification Section */
 
@@ -170,7 +144,6 @@
 }
 
 @media (max-width: 480px) {
-  
   /* About Secttion */
   /* .sec-title h2 {
     font-size: 1.3rem;
@@ -190,7 +163,4 @@
     font-size: 2rem;
     margin-bottom: 25px;
   }
-
-
 }
-
