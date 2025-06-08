@@ -736,55 +736,75 @@ html {
 }
 
 /* Contact Section */
+.contact-body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
 .contact-section {
-  padding: 3rem 1rem;
-  background: #f8f9fa;
-  font-family: Arial, sans-serif;
-}
-.contact-container {
-  max-width: 700px;
-  margin: 0 auto;
-}
-.contact-container h2 {
+  background: #fff;
+  max-width: 600px;
+  width: 90%;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  /* border: 2px solid red; */
 }
-.contact-container .form-group {
-  margin-bottom: 1.5rem;
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #222;
 }
-label {
-  display: block;
-  margin-bottom: 0.5rem;
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contact-item {
+  display: inline-block;
+  font-size: 1.15rem;
+  color: #0077cc;
+  text-decoration: none;
   font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
-input,
-textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+
+.contact-item:hover,
+.contact-item:focus {
+  background-color: #0077cc;
+  color: #fff;
+  border-color: #005a99;
+  outline: none;
 }
-.contact-container button {
-  display: block;
-  width: 100%;
-  padding: 0.9rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #0056b3;
-}
-span {
-  color: red;
-}
-#formStatus {
-  margin-top: 1rem;
-  text-align: center;
-  font-weight: 500;
+
+@media (max-width: 480px) {
+  .contact-details {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact-item {
+    padding: 14px 25px;
+    font-size: 1.2rem;
+  }
 }
