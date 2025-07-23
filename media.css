@@ -103,6 +103,22 @@
     padding: 8px;
   }
 
+  /* Experience Section */
+  .experience-card {
+    padding: 20px;
+  }
+  .experience-grid {
+    padding: 0;
+  }
+
+  .job-title {
+    font-size: 1.1rem;
+  }
+
+  .job-description,
+  .job-highlights li {
+    font-size: 0.9rem;
+  }
   /* Certification Section */
 
   .section-title {
@@ -163,4 +179,7 @@
     font-size: 2rem;
     margin-bottom: 25px;
   }
+}
+
+@media (max-width: 640px) {
 }
