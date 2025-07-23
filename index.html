@@ -62,214 +62,77 @@
   </header>
 
 
-  <!-- About Section -->
-  <section class="about-section" id="about">
-    <h2>About Me</h2>
-    <div class="about-content">
+  <!-- About Section and Skill Section -->
+  <!-- Skill Section -->
+  <section class="about-skills-container">
+    <div class="about-me">
+      <h2>About Me</h2>
       <p>Hello, my name is <strong>Prem Raj</strong>, and I am from Bihar, but I currently live in
         <strong>New Delhi</strong>.
       </p>
-      <p>I am pursuing a <strong>Master's in Computer Applications (MCA)</strong> at <strong>NIET College, Greater
-          Noida</strong>.</p>
-      <p>I have a keen interest in <strong>Software Engineering</strong> and <strong>Penetration Testing</strong>.</p>
+      <p>I am pursuing a <strong>Master's in Computer Applications (MCA)</strong> at <strong>NIETian College</strong>.
+      </p>
+      <p>I have a keen interest in <strong>Software Engineering</strong> and <strong>Penetration Testing</strong> (Red
+        Teaming).</p>
       <p>Additionally, I have completed a <strong>Diploma in Cyber Security</strong> and <strong>Web
           Development</strong> from Delhi.
       </p>
     </div>
 
-    <div class="contact-info">
-      <a href="mailto:guptapremraj3@gmail.com">📧 guptapremraj3@gmail.com</a>
-      <a href="tel:+919229186355">📞 +91 92291 86355</a>
-    </div>
-  </section>
+    <div class="skills-section">
+      <h2>Technical Skills</h2>
 
-
-  <!-- Skill Section -->
-
-  <section id="skills" class="skills-section">
-    <div class="skills-container">
-      <h2 class="section-title head">My Skills</h2>
-
-      <!-- Technical Skills -->
-      <div class="skills-group">
-        <div class="skills-subsection">
-          <h3 class="subsection-title">Technical Skills</h3>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">HTML<i class="ri-arrow-right-double-fill"></i></span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 90%"></div>
-            </div>
-            <div class="skill-detail">
-              HTML is the foundation of web development. It structures content
-              on the web.
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">CSS & CSS3<i
-                class="ri-arrow-right-double-fill"></i></span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 85%"></div>
-            </div>
-            <div class="skill-detail">
-              CSS styles the structure built with HTML, making it visually
-              appealing.
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">JavaScript<i
-                class="ri-arrow-right-double-fill"></i></span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 40%"></div>
-            </div>
-            <div class="skill-detail">
-              JavaScript adds interactivity and logic to websites.
-            </div>
-          </div>
-
-          <!-- <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Python<i
-                class="ri-arrow-right-double-fill"></i></span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 75%"></div>
-            </div>
-            <div class="skill-detail">
-              React is a JavaScript library for building user interfaces
-              efficiently.
-            </div>
-          </div> -->
+      <div class="skill-group">
+        <h3>Programming Languages</h3>
+        <div class="skill-tags">
+          <button onclick="showDetail('Python')">Python</button>
+          <button onclick="showDetail('C')">C</button>
+          <button onclick="showDetail('HTML')">HTML</button>
+          <button onclick="showDetail('CSS')">CSS</button>
+          <button onclick="showDetail('JavaScript')">JavaScript</button>
+          <button onclick="showDetail('C++')">C++</button>
+          <button onclick="showDetail('Java')">Java</button>
         </div>
+      </div>
 
-        <!-- Soft Skill -->
-        <div class="skills-subsection">
-          <h3 class="subsection-title">Soft Skills</h3>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Communication</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 85%"></div>
-            </div>
-            <div class="skill-detail">
-              Clear and effective communication in teams and with clients.
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Teamwork</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 90%"></div>
-            </div>
-            <div class="skill-detail">
-              Working collaboratively to achieve shared goals.
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Problem Solving</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 80%"></div>
-            </div>
-            <div class="skill-detail">
-              Quickly identifying and resolving issues effectively.
-            </div>
-          </div>
-
-          <!-- <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Adaptability</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 75%"></div>
-            </div>
-            <div class="skill-detail">
-              Adjusting easily to changing environments and requirements.
-            </div>
-          </div> -->
+      <div class="skill-group">
+        <h3>Soft Skills</h3>
+        <div class="skill-tags">
+          <button onclick="showDetail('Communication')">Communication</button>
+          <button onclick="showDetail('Teamwork')">Teamwork</button>
+          <button onclick="showDetail('Problem Solving')">Problem Solving</button>
         </div>
+      </div>
 
-        <!-- Cyber Skills -->
-        <div class="skills-subsection">
-          <h3 class="subsection-title">Cyber Security</h3>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Python</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 85%"></div>
-            </div>
-            <div class="skill-detail">
-              Proficient in scripting and automation tasks, including data
-              parsing, tool development, and exploit scripting.
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Linux</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 90%"></div>
-            </div>
-            <div class="skill-detail">
-              Experienced in using Linux systems for server management,
-              terminal operations, and cybersecurity tools.
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Ethical Hacking</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 80%"></div>
-            </div>
-            <div class="skill-detail">
-              Skilled in identifying vulnerabilities and securing systems
-              using white-hat techniques.
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Penetration Testing</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 75%"></div>
-            </div>
-            <div class="skill-detail">
-              Hands-on experience with tools like Metasploit, Burp Suite, and
-              Nmap for comprehensive security assessments.
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Web Penetration Testing</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 75%"></div>
-            </div>
-            <div class="skill-detail">
-              Expertise in testing web applications for XSS, SQLi, CSRF, and
-              other common vulnerabilities.
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">Mobile Penetration Testing</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 75%"></div>
-            </div>
-            <div class="skill-detail">
-              Knowledgeable in testing Android and iOS apps for security
-              loopholes using tools like MobSF and Frida.
-            </div>
-          </div>
-          <div class="skill">
-            <span class="skill-name" onclick="toggleDetail(this)">AWS Cloud</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 75%"></div>
-            </div>
-            <div class="skill-detail">
-              Benefits of Cloud: Scalability, Agility, Elasticity, Cost-Effectiveness
-              IAM, EC2, S3, Versioning, Lifecycle policies, S3 Encryption, Subnets (Public/Private), ELB, etc.
-            </div>
-          </div>
+      <div class="skill-group">
+        <h3>Cyber Security</h3>
+        <div class="skill-tags">
+          <button onclick="showDetail('Python')">Python</button>
+          <button onclick="showDetail('Linux')">Linux</button>
+          <button onclick="showDetail('Ethical Hacking')">Ethical Hacking</button>
+          <button onclick="showDetail('Penetration')">Penetration Testing</button>
+          <button onclick="showDetail('Web Penetration')">Web Penetration Testing</button>
+          <button onclick="showDetail('Mobile')">Mobile Penetration Testing</button>
+          <button onclick="showDetail('AWS')">AWS Cloud</button>
         </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Tools & Technologies</h3>
+        <div class="skill-tags">
+          <button onclick="showDetail('Git')">Git & GitHub</button>
+          <button onclick="showDetail('VS Code')">VS Code</button>
+          <!-- <button onclick="showDetail('Figma')">Figma</button> -->
+          <!-- <button onclick="showDetail('Adobe XD')">Adobe XD</button> -->
+        </div>
+      </div>
+
+      <div id="skill-detail" class="skill-detail">
+        <p>Select a skill to view details here.</p>
       </div>
     </div>
   </section>
+
 
   <!-- Projects Section -->
   <section id="projects" class="project-section">
@@ -335,7 +198,7 @@
           <div class="project-info">
             <h3 class="project-title">S.N Sinha College Project</h3>
             <p class="project-description">
-              Responsive Sarkari-Job with HTML/CSS and JavaScript.
+              Responsive site on My College and With HTML, CSS3 & JavaScript.
             </p>
             <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
             <div class="project-actions">
