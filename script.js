@@ -26,7 +26,7 @@ navItems.forEach((link) => {
 });
 
 // hero section
-const roles = ["Python Developer", "Penetration Tester"];
+const roles = ["Software Tester", "Penetration Tester"];
 let currentRole = 0;
 const roleElement = document.getElementById("dynamic-role");
 
