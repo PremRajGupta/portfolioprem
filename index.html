@@ -18,126 +18,174 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="home">
   <!-- Navbar section -->
-  <nav class="navbar" role="navigation" aria-label="Main Navigation">
-    <div class="navbar-container">
-      <a href="index.html" class="navbar-logo">Prem Raj</a>
+  <nav class="navbar">
+    <a href="#" class="logo">Portfolio</a>
 
-      <!-- Toggle icons -->
-      <div class="menu-icons">
-        <i class="ri-menu-line" id="menu-open" aria-label="Open menu"></i>
-        <i class="ri-close-line" id="menu-close" aria-label="Close menu"></i>
-      </div>
-
-      <!-- Nav links -->
-      <ul class="navbar-links" id="navbar-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certificates">Certificate</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- Toggle buttons for mobile -->
+    <div class="menu-toggle">
+      <i id="menu-open" class="fas fa-bars"></i>
+      <i id="menu-close" class="fas fa-times" style="display: none;"></i>
     </div>
+    <ul class="navbar-links" id="navbar-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certificates">Certificate</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
+  <div class="bars-animation">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+  </div>
 
   <!-- Hero Section -->
-  <header class="hero" id="home">
-    <div class="hero-image">
-      <img src="./pic.png" alt="Hero Image" />
-    </div>
-    <div class="hero-content">
-      <h1 class="fade-in">Hi, I’m <span>Prem Raj</span></h1>
-      <p id="dynamic-role" class="fade-in-delay">Software Tester</p>
-      <div class="buttons fade-in-delay2">
-        <a href="#resume" class="btn outline">CV/Resume</a>
-        <a href="#contact" class="btn outline">Contact</a>
-      </div>
-    </div>
-  </header>
-
-
-  <!-- About Section and Skill Section -->
-  <!-- Skill Section -->
-  <section class="about-skills-container">
-    <div class="about-me">
-      <h2>About Me</h2>
-      <p>Hello, my name is <strong>Prem Raj</strong>, and I am from Bihar, but I currently live in
-        <strong>New Delhi</strong>.
+  <section class="home">
+    <div class="home-info">
+      <h1>Prem Raj</h1>
+      <h2>I'm a
+        <span style="--i:4;" data-text="Software Testing">Software Testing</span>
+        <span style="--i:3;" data-text="Penetration Testing">Penetration Testing</span>
+        <span style="--i:2;" data-text="Designer">Designer</span>
+        <span style="--i:1;" data-text="Youtuber">Youtuber</span>
+      </h2>
+      <p>I am pursuing a <strong>Master's in Computer Applications (MCA)</strong> at <strong>NIETian
+          College</strong>.
       </p>
-      <p>I am pursuing a <strong>Master's in Computer Applications (MCA)</strong> at <strong>NIETian College</strong>.
-      </p>
-      <p>I have a keen interest in <strong>Software Engineering</strong> and <strong>Penetration Testing</strong> (Red
+      <p>I have a keen interest in <strong>Software Engineering</strong> and <strong>Penetration Testing</strong>
+        (Red
         Teaming).</p>
       <p>Additionally, I have completed a <strong>Diploma in Cyber Security</strong> and <strong>Web
           Development</strong> from Delhi.
       </p>
+      <div class="btn-sci">
+        <a href="#" class="btn">Download</a>
+        <div class="sci">
+          <a href="#"><i class="ri-github-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
     </div>
-
-    <div class="skills-section">
-      <h2>Technical Skills</h2>
-
-      <div class="skill-group">
-        <h3>Programming Languages</h3>
-        <div class="skill-tags">
-          <button onclick="showDetail('Python')">Python</button>
-          <button onclick="showDetail('C')">C</button>
-          <button onclick="showDetail('HTML')">HTML</button>
-          <button onclick="showDetail('CSS')">CSS</button>
-          <button onclick="showDetail('JavaScript')">JavaScript</button>
-          <button onclick="showDetail('C++')">C++</button>
-          <button onclick="showDetail('Java')">Java</button>
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="./pic2-removebg-preview.png" alt="Prem Raj">
         </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Soft Skills</h3>
-        <div class="skill-tags">
-          <button onclick="showDetail('Communication')">Communication</button>
-          <button onclick="showDetail('Teamwork')">Teamwork</button>
-          <button onclick="showDetail('Problem Solving')">Problem Solving</button>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Cyber Security</h3>
-        <div class="skill-tags">
-          <button onclick="showDetail('Python')">Python</button>
-          <button onclick="showDetail('Linux')">Linux</button>
-          <button onclick="showDetail('Ethical Hacking')">Ethical Hacking</button>
-          <button onclick="showDetail('Penetration')">Penetration Testing</button>
-          <button onclick="showDetail('Web Penetration')">Web Penetration Testing</button>
-          <button onclick="showDetail('Mobile')">Mobile Penetration Testing</button>
-          <button onclick="showDetail('AWS')">AWS Cloud</button>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Tools & Technologies</h3>
-        <div class="skill-tags">
-          <button onclick="showDetail('Git')">Git & GitHub</button>
-          <button onclick="showDetail('VS Code')">VS Code</button>
-          <!-- <button onclick="showDetail('Figma')">Figma</button> -->
-          <!-- <button onclick="showDetail('Adobe XD')">Adobe XD</button> -->
-        </div>
-      </div>
-
-      <div id="skill-detail" class="skill-detail">
-        <p>Select a skill to view details here.</p>
       </div>
     </div>
   </section>
+  <!-- ! End of hero Section -->
+
+  <!-- Journey Section -->
+  <section class="journey-section">
+    <div class="journey-left">
+      <h2>Our Journey</h2>
+      <p>
+        Since starting my studies in 2015, I have been studying and gaining experience on the study line, and
+        now I am doing PG in MCA course.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="milestone">
+        <div class="circle"></div>
+        <div class="date">MAY 2016</div>
+        <div class="title">10th Standard</div>
+        <!-- <a href="#" class="read-more">READ MORE →</a> -->
+      </div>
+      <div class="milestone">
+        <div class="circle"></div>
+        <div class="date">OCT 2020</div>
+        <div class="title">----</div>
+        <!-- <a href="#" class="read-more">READ MORE →</a> -->
+      </div>
+      <div class="milestone">
+        <div class="circle"></div>
+        <div class="date">MAR 2025</div>
+        <div class="title">----</div>
+        <!-- <a href="#" class="read-more">READ MORE →</a> -->
+      </div>
+      <div class="milestone">
+        <div class="circle"></div>
+        <div class="date">AUG 2027</div>
+        <div class="title">Master of Computer</div>
+        <!-- <a href="#" class="read-more">READ MORE →</a> -->
+      </div>
+
+    </div>
+  </section>
+  <!-- ! End of Journey Section -->
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <h2 class="section-heading">My Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skills-card">
+          <h3>PROGRAMMING LANGUAGES</h3>
+          <ul>
+            <li>C Language</li>
+            <li>Python</li>
+            <li>Basic C++</li>
+            <li>Basic Java</li>
+          </ul>
+        </div>
+
+        <div class="skills-card">
+          <h3>Language 0f Development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS/CSS3</li>
+            <li>JavaScipt</li>
+          </ul>
+        </div>
+
+        <div class="skills-card">
+          <h3>Dev Tools & Platforms</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Linux</li>
+            <li>WordPress</li>
+            <li>Python</li>
+          </ul>
+        </div>
+
+        <div class="skills-card">
+          <h3>Cyber Security</h3>
+          <ul>
+            <li>Ethical Hacing</li>
+            <li>Penetration Testing</li>
+            <li>Web Penetration Testing</li>
+            <li>Mobile Penetration Testing</li>
+            <li>AWS Cloud</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ! End of Skills Section -->
 
 
   <!-- Projects Section -->
   <section id="projects" class="project-section">
     <div class="project-container">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-heading">Projects</h2>
       <p class="section-subheading">Filter projects by technology</p>
 
       <!-- Filter Buttons -->
@@ -213,7 +261,7 @@
 
   <!-- Education Section -->
   <section id="education" class="education-section">
-    <h2 class="section-title">🎓Education</h2>
+    <h2 class="section-heading">🎓Education</h2>
     <div class="education-grid">
       <div class="education-item">
         <h3 class="degree">Master of Computer Applications (MCA)</h3>
@@ -249,7 +297,7 @@
 
   <!-- Other Course -->
   <section id="education" class="other-section">
-    <h2 class="section-title">🎓Other Course</h2>
+    <h2 class="section-heading">🎓Other Course</h2>
     <div class="education-grid">
       <div class="education-item">
         <h3 class="degree">Master Diploma in Cyber Security</h3>
@@ -294,7 +342,7 @@
         <!-- Experience 2 -->
         <div class="experience-card">
           <h3 class="job-title">Programer Teacher</h3>
-          <span class="company">ISDM Comuter Class</span>
+          <span class="company">ISDM Computer Class</span>
           <span class="duration">Jun 2023 – Dec 2024</span>
           <p class="job-description">I teach Programing like C Language, Some C++ Programing, Computer Architecture ,
             HTML, and
@@ -339,7 +387,7 @@
   <!-- Certificate Section -->
   <section id="certificates" class="certificate-section">
     <div class="container">
-      <h2 class="section-title ">🎓Professional Certifications</h2>
+      <h2 class="section-heading">🎓Professional Certifications</h2>
 
       <div class="swiper certificate-swiper">
         <div class="swiper-wrapper">
@@ -466,10 +514,10 @@
   <!-- Contact Section -->
   <section class="contact-body" id="contact">
     <section class="contact-section" aria-label="Contact Information">
-      <h2>Contact Me</h2>
+      <h2 class="section-heading"">Contact Me</h2>
       <p>If you'd like to get in touch, feel free to reach out via the following:</p>
 
-      <div class="contact-details">
+      <div class=" contact-details">
         <a href="mailto:guptapremraj3@gmail.com" aria-label="Send email to Prem Raj" class="contact-item">
           📧 tester@gmail.com
         </a>
@@ -484,7 +532,7 @@
           class="contact-item">
           🐱 GitHub Profile
         </a>
-      </div>
+        </div>
     </section>
   </section>
 
@@ -530,7 +578,25 @@
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
+  <!-- hero section -->
+  <script src="https://unpkg.com/typewriter-effect@2.18.2/dist/core.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- !----end--- -->
+
+
+
   <script>
+    <!-- skills-card -->
+    ScrollReveal().reveal('.skills-card', {
+      distance: '30px',
+      origin: 'bottom',
+      duration: 800,
+      interval: 150
+    });
+
+
+
     const swiper = new Swiper(".certificate-swiper", {
       loop: true,
       grabCursor: true,
