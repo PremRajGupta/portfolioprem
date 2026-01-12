@@ -410,61 +410,75 @@
             <h3>Cyber Threat Intelligence</h3>
             <p>Issued by STP Computer Education</p>
             <span>October 2024</span>
-            <a href="https://drive.google.com/file/d/110QafZiouYe4k9Br4SrToiTNyOaUBsVh/view?usp=sharing"
-              target="_blank">View Certificate</a>
+            <button class="view-btn"
+              onclick="openCert('https://drive.google.com/file/d/110QafZiouYe4k9Br4SrToiTNyOaUBsVh/preview')">
+              View Certificate
+            </button>
           </div>
 
           <div class="swiper-slide certificate-card">
             <h3>Web Development</h3>
             <p>Issued by STP Computer Education</p>
             <span>June 2024</span>
-            <a href="https://drive.google.com/file/d/14X81gPzRWo1AbRJWhajqLF1zhd5suR6l/view?usp=sharing"
-              target="_blank">View Certificate</a>
+            <button class="view-btn"
+              onclick="openCert('https://drive.google.com/file/d/14X81gPzRWo1AbRJWhajqLF1zhd5suR6l/preview?usp=sharing')">
+              View Certificate
+            </button>
           </div>
 
           <div class="swiper-slide certificate-card">
             <h3>JavaScript</h3>
             <p>Issued by STP Computer Education</p>
             <span>April 2024</span>
-            <a href="https://drive.google.com/file/d/16MjzPoI5dL2kvxxiu6KHgg6CyPtLvXgU/view?usp=sharing"
-              target="_blank">View Certificate</a>
+            <button class="view-btn"
+              onclick="openCert('https://drive.google.com/file/d/16MjzPoI5dL2kvxxiu6KHgg6CyPtLvXgU/preview?usp=sharing')">
+              View Certificate
+            </button>
+
           </div>
 
           <div class="swiper-slide certificate-card">
             <h3>CSS & CSS3</h3>
             <p>Issued by STP Computer Education</p>
             <span>September 2023</span>
-            <a href="https://drive.google.com/file/d/1QmJfFsQLZA9fDa1bTdxERpiNbc9IVH0V/view?usp=sharing"
-              target="_blank">View Certificate</a>
+            <button class="view-btn"
+              onclick="openCert('https://drive.google.com/file/d/1QmJfFsQLZA9fDa1bTdxERpiNbc9IVH0V/preview?usp=sharing')">
+              View Certificate
+            </button>
+
           </div>
 
           <div class="swiper-slide certificate-card">
             <h3>HTML</h3>
             <p>Issued by STP Computer Education</p>
             <span>July 2023</span>
-            <a href="https://drive.google.com/file/d/1H1BpbeCCSXfsnWumphPRVqRaN4lGjnAG/view?usp=sharing"
-              target="_blank">View Certificate</a>
+            <button class="view-btn"
+              onclick="openCert('https://drive.google.com/file/d/1H1BpbeCCSXfsnWumphPRVqRaN4lGjnAG/preview?usp=sharing')">
+              View Certificate
+            </button>
           </div>
-
-
 
           <div class="swiper-slide certificate-card">
             <h3>Tally ERP 9</h3>
             <p>Issued by STP Computer Education</p>
             <span>June 2024</span>
-            <a href="https://drive.google.com/file/d/1QsW8EV3uE3sH06IaAMgLYN99WYYaR2ZQ/view?usp=sharing"
-              target="_blank">View Certificate</a>
+            <button class="view-btn"
+              onclick="openCert('https://drive.google.com/file/d/1QsW8EV3uE3sH06IaAMgLYN99WYYaR2ZQ/preview?usp=sharing')">
+              View Certificate
+            </button>
           </div>
 
           <div class="swiper-slide certificate-card">
             <h3>Python Language</h3>
             <p>Issued by Craw Security</p>
             <span>June 2024</span>
-            <a href="https://drive.google.com/file/d/1E3JArPpxYFt-grMLVHQop1f4I3TZcFXK/view?usp=sharing"
-              target="_blank">View Certificate</a>
-          </div>
+            <button class="view-btn"
+              onclick="openCert('https://drive.google.com/file/d/1E3JArPpxYFt-grMLVHQop1f4I3TZcFXK/preview?usp=sharing')">
+              View Certificate
+            </button>
+          </div> -->
 
-          <div class="swiper-slide certificate-card">
+          <!-- <div class="swiper-slide certificate-card">
             <h3>Web Vulnerability</h3>
             <p>Issued by Craw Security</p>
             <span>February 2025</span>
@@ -510,7 +524,8 @@
             <span>September 2024</span>
             <a href="https://drive.google.com/file/d/1MsX7WgMBtEalUPoewKNPd4aIjTvddIqv/view?usp=sharing"
               target="_blank">View Certificate</a>
-          </div>
+          </div> --> -->
+
 
           <!-- Add more .swiper-slide items as needed -->
         </div>
@@ -523,7 +538,16 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
+
+    <div class="cert-modal" id="certModal">
+      <span class="close-btn" onclick="closeCert()">×</span>
+      <iframe id="certFrame" allowfullscreen></iframe>
+    </div>
+
   </section>
+
+
+
 
   <!-- Contact Section -->
   <section class="contact-body" id="contact">
@@ -557,7 +581,7 @@
     <div class="footer-container">
       <div class="footer-brand">
         <h2>Prem Raj</h2>
-        <p>I am Developer & Penetration Tester(Red Team).</p>
+        <p>I am Developer & Tester(Red Team).</p> <br> Mobile, WebSite, Windows, Linux & Software (Manual/Automation).
       </div>
 
       <div class="footer-links">

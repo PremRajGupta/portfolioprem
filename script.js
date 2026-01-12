@@ -27,6 +27,7 @@ navItems.forEach((link) => {
 
 // ! End of NavBar Section!
 
+// Zoom Out image
 function openModal(img) {
   const modal = document.getElementById("imgModal");
   const modalImg = document.getElementById("modalImg");
@@ -44,6 +45,7 @@ function openModal(img) {
 function closeModal() {
   document.getElementById("imgModal").style.display = "none";
 }
+//! end of zoom out image
 
 // smooth
 
@@ -61,65 +63,128 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+//!end of smooth screen slide
+
 // Project section
 
-const filterButtons = document.querySelectorAll(".filter-btn");
-const projectCards = document.querySelectorAll(".project-card");
+// const filterButtons = document.querySelectorAll(".filter-btn");
+// const projectCards = document.querySelectorAll(".project-card");
 
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    // Remove active class from all
-    filterButtons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
+// filterButtons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     // Remove active class from all
+//     filterButtons.forEach((btn) => btn.classList.remove("active"));
+//     button.classList.add("active");
 
-    const filterValue = button.getAttribute("data-filter");
+//     const filterValue = button.getAttribute("data-filter");
 
-    projectCards.forEach((card) => {
-      const category = card.getAttribute("data-category");
+//     projectCards.forEach((card) => {
+//       const category = card.getAttribute("data-category");
 
-      if (filterValue === "all" || category.includes(filterValue)) {
-        card.classList.remove("hide");
-      } else {
-        card.classList.add("hide");
-      }
-    });
-  });
-});
+//       if (filterValue === "all" || category.includes(filterValue)) {
+//         card.classList.remove("hide");
+//       } else {
+//         card.classList.add("hide");
+//       }
+//     });
+//   });
+// });
+
+// const track = document.getElementById("certTrack");
+// let index = 0;
+
+// function moveRight() {
+//   index++;
+//   if (index > track.children.length - 1) index = 0;
+//   track.style.transform = `translateX(-${index * 345}px)`;
+// }
+
+// function moveLeft() {
+//   index--;
+//   if (index < 0) index = track.children.length - 1;
+//   track.style.transform = `translateX(-${index * 345}px)`;
+// }
+
+// // Auto infinite slide
+// setInterval(moveRight, 3000);
+
+// // Modal view
+// function openModal(src) {
+//   document.getElementById("certModal").style.display = "flex";
+//   document.getElementById("modalImg").src = src;
+// }
+
+// function closeModal() {
+//   document.getElementById("certModal").style.display = "none";
+// }
 
 // contact section
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", async function (e) {
-    e.preventDefault();
+// document
+//   .getElementById("contactForm")
+//   .addEventListener("submit", async function (e) {
+//     e.preventDefault();
 
-    const status = document.getElementById("formStatus");
-    status.textContent = "Sending...";
+//     const status = document.getElementById("formStatus");
+//     status.textContent = "Sending...";
 
-    const formData = {
-      name: this.name.value.trim(),
-      email: this.email.value.trim(),
-      message: this.message.value.trim(),
-    };
+//     const formData = {
+//       name: this.name.value.trim(),
+//     email: this.email.value.trim(),
+//     message: this.message.value.trim(),
+//   };
 
-    try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzNfqU8NroZ_hKpnH-4CHDtZhqttXJ_czlqREV6ZyIr8-7YDqnDDurmLcUIQ7RukzlL/exec",
-        {
-          method: "POST",
-          body: JSON.stringify(formData),
-          headers: { "Content-Type": "application/json" },
-        }
-      );
+//   try {
+//     const response = await fetch(
+//       "https://script.google.com/macros/s/AKfycbzNfqU8NroZ_hKpnH-4CHDtZhqttXJ_czlqREV6ZyIr8-7YDqnDDurmLcUIQ7RukzlL/exec",
+//       {
+//         method: "POST",
+//         body: JSON.stringify(formData),
+//         headers: { "Content-Type": "application/json" },
+//       }
+//     );
 
-      if (response.ok) {
-        status.textContent = "Message sent successfully!";
-        status.style.color = "green";
-        this.reset();
-      } else {
-        throw new Error("Network error");
-      }
-    } catch (err) {
-      status.textContent = "Failed to send message. Please try again.";
-      status.style.color = "red";
-    }
-  });
+//     if (response.ok) {
+//       status.textContent = "Message sent successfully!";
+//       status.style.color = "green";
+//       this.reset();
+//     } else {
+//       throw new Error("Network error");
+//     }
+//   } catch (err) {
+//     status.textContent = "Failed to send message. Please try again.";
+//     status.style.color = "red";
+//   }
+// });
+
+function openCert(url) {
+  document.getElementById("certModal").style.display = "flex";
+  document.getElementById("certFrame").src = url;
+}
+
+function closeCert() {
+  document.getElementById("certModal").style.display = "none";
+  document.getElementById("certFrame").src = "";
+}
+
+// Swiper Init
+new Swiper(".certificate-swiper", {
+  loop: true,
+  spaceBetween: 25,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+});
