@@ -27,6 +27,24 @@ navItems.forEach((link) => {
 
 // ! End of NavBar Section!
 
+function openModal(img) {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+
+  modal.style.display = "flex";
+  modalImg.src = img.src;
+
+  modalImg.style.transform = "scale(0.7)";
+  setTimeout(() => {
+    modalImg.style.transition = "0.3s ease";
+    modalImg.style.transform = "scale(1)";
+  }, 10);
+}
+
+function closeModal() {
+  document.getElementById("imgModal").style.display = "none";
+}
+
 // smooth
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

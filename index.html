@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
   <link rel="manifest" href="./favicon/site.webmanifest" />
 
-  <title>Protfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./media.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
@@ -64,7 +64,8 @@
       <p>I am pursuing a <strong>Master's in Computer Applications (MCA)</strong> at <strong>NIETian
           College</strong>.
       </p>
-      <p>I have a keen interest in <strong>Software Engineering</strong> and <strong>Penetration Testing</strong>
+      <p>I have a keen interest in <strong>Software Testing </strong>(Manual/Automation) and <strong>Penetration
+          Testing</strong>
         (Red
         Teaming).</p>
       <p>Additionally, I have completed a <strong>Diploma in Cyber Security</strong> and <strong>Web
@@ -75,8 +76,9 @@
         <div class="sci">
           <a href="https://github.com/PremRajGupta"><i class="ri-github-fill"></i></a>
           <a href="https://www.linkedin.com/in/prem-raj-7p7r8e2m/"><i class="ri-linkedin-fill"></i></a>
-          <a href="#"><i class="ri-twitter-fill"></i></a>
-          <a href="https://learncodeprem.blogspot.com/"><i class="ri-firefox-browser-fill"></i></a>
+          <a href="https://learncodeprem.blogspot.com/"><i class="ri-chrome-line"></i></a>
+
+          <!-- <a href="https://learncodeprem.blogspot.com/"><i class="fab-firefox-browser"></i></a> -->
         </div>
       </div>
     </div>
@@ -261,7 +263,7 @@
 
   <!-- Education Section -->
   <section id="education" class="education-section">
-    <h2 class="section-heading">🎓Education</h2>
+    <h2 class="section-heading">📜Education</h2>
     <div class="education-grid">
       <div class="education-item">
         <h3 class="degree">Master of Computer Applications (MCA)</h3>
@@ -270,6 +272,7 @@
         <p class="description">
           Focused on software engineering, algorithms, and data structures.
         </p>
+
       </div>
       <div class="education-item">
         <h3 class="degree">Bachelor of Computer Applications (BCA)</h3>
@@ -295,6 +298,10 @@
     </div>
   </section>
 
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <img id="modalImg">
+  </div>
+
   <!-- Other Course -->
   <section id="education" class="other-section">
     <h2 class="section-heading">🎓Other Course</h2>
@@ -304,16 +311,23 @@
         <span class="institution">Craw Cyber Security Institute, New Delhi</span>
         <span class="year">2024 - 2025</span>
         <p class="description">
-          Focused on Cyber Security, Penetration Testing, and Cyber Forensics, IOT.
+          Focused on Cyber Security, Penetration Testing, and Cyber Forensics, IOT. <br> Certificate
         </p>
+        <div class="cert-logo">
+          <img src="images/Cyber.png" alt="Certificate" onclick="openModal(this)">
+        </div>
       </div>
       <div class="education-item">
-        <h3 class="degree">Diploma in Web Development</h3>
+        <h3 class="degree">Master Diploma in Web Development</h3>
         <span class="institution">STP Computer Education, New Delhi</span>
         <span class="year">2023 - 2024</span>
         <p class="description">
-          Focused on Frontend Developer and Backend Developer.
+          Focused on Frontend Developer and Backend Developer.<br>
+          Certificate
         </p>
+        <div class="cert-logo">
+          <img src="images/web deve.png" alt="Certificate" onclick="openModal(this)">
+        </div>
       </div>
     </div>
   </section>
