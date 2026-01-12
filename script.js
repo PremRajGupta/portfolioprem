@@ -170,8 +170,9 @@ function closeCert() {
 new Swiper(".certificate-swiper", {
   loop: true,
   spaceBetween: 25,
+  speed: 1200,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
