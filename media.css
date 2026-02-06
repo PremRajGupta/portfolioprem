@@ -30,7 +30,6 @@
   /* hero section */
 
   .home {
-    height: auto;
     flex-direction: column;
     padding-top: 100px;
     text-align: center;
@@ -46,10 +45,12 @@
 
   .home-img .img-box {
     width: 50vw;
-    height: 50vw;
+    height: 50vh;
     margin-top: 30px;
   }
+
 }
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 5%;
@@ -67,11 +68,14 @@
     font-size: 16px;
   }
 
+  /* Home Section */
+
   .home {
     flex-direction: column;
     gap: 30px;
     padding: 80px 5% 0;
     text-align: center;
+    border: 2px solid green;
   }
 
   .home-info h1 {
@@ -111,10 +115,13 @@
     height: 100%;
   }
 
+
+
   /* Experience Section */
   .experience-card {
     padding: 20px;
   }
+
   .experience-grid {
     padding: 0;
   }
@@ -127,6 +134,7 @@
   .job-highlights li {
     font-size: 0.9rem;
   }
+
   /* Certification Section */
 
   .section-title {
@@ -144,13 +152,16 @@
   .certificate-card p {
     font-size: 0.95rem;
   }
+
   .education-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 0;
   }
+
   .section-title {
     font-size: 1.2rem;
   }
+
   /* footer */
   .footer-container {
     flex-direction: column;
@@ -170,7 +181,7 @@
 @media (max-width: 900px) {
   .journey-section {
     background: linear-gradient(#ffffff, #0f172a);
-    /* margin-top: 70px; */
+    margin-top: 70px;
     flex-direction: column;
     align-items: center;
   }
@@ -199,6 +210,7 @@
 
 /* Extra Small Devices (e.g. < 480px) */
 @media (max-width: 480px) {
+
   .home-info h1 {
     font-size: 30px;
   }
@@ -218,9 +230,16 @@
   .navbar ul li {
     margin: 10px 15px;
   }
-
-  .home-img .img-box {
-    width: 80vw;
-    height: 80vw;
-  }
 }
+
+
+
+
+
+/* ------------------ */
+
+
+
+
+
+

@@ -10,7 +10,7 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  color: #333;
+  /* color: #333; */
 }
 
 html {
@@ -41,7 +41,8 @@ a {
   top: 0;
   width: 100%;
   padding: 25px 9%;
-  background: rgb(73, 70, 89);
+  /* background: rgb(73, 70, 89); */
+  background: #1f242d;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +50,7 @@ a {
   visibility: hidden;
   opacity: 0;
   animation: show-content 1.5s linear forwards;
-  animation-delay: 1.2s;
+  animation-delay: 1s;
 }
 
 @keyframes show-content {
@@ -112,7 +113,6 @@ a {
   align-items: center;
   gap: 50px;
   height: 100vh;
-  /* height: auto; */
   padding: 60px 9% 0;
   color: #fff;
   visibility: hidden;
