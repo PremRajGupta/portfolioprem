@@ -433,7 +433,18 @@ a {
   padding: 6px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   transition: color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.skills-card ul li img{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0%;
+  border-radius: 50%;
+  align-items: center;
+}
+
 
 .skills-card ul li:last-child {
   border-bottom: none;
