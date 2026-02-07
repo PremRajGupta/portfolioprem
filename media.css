@@ -75,7 +75,7 @@
     gap: 30px;
     padding: 80px 5% 0;
     text-align: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
   }
 
   .home-info h1 {
@@ -180,7 +180,7 @@
 
 @media (max-width: 900px) {
   .journey-section {
-    background: linear-gradient(#ffffff, #0f172a);
+    /* background: linear-gradient(#ffffff, #0f172a); */
     margin-top: 70px;
     flex-direction: column;
     align-items: center;
